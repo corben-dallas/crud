@@ -27,7 +27,8 @@
     padding: 10px 4px;
     color: #003563;
     cursor: pointer;
-    text-transform: uppercase;
+	text-transform: uppercase;
+	outline: none;
 }
 
 .form__btn--disabled {
@@ -67,4 +68,13 @@
 	border-radius: 4px;
 	background-color: #ff8080;
 	cursor: pointer;
+}
+
+.error {
+	text-align: center;
+    background-color: #ffe2e2;
+    border: 1px solid #ff9b9b;
+    border-left: none;
+    border-right: none;
+    padding: 15px 0;
 }

@@ -1,7 +1,7 @@
-export const getData = (url) => 
-  fetch(url)
-    .then(response => response.json())
-    .catch(err => console.error(err));
+export const getData = async (url) => {
+  const resp = await fetch(url);
+  return resp.json();
+}
 
 export const updateData = async (url, method, data = {}) => {
   const resp = await fetch(url, {

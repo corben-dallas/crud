@@ -1,6 +1,10 @@
 import React from 'react'
 
-const Notes = ({notes, onNoteRemove}) => {
+const Notes = ({notes, onNoteRemove, error}) => {
+  if (error) return (
+    <p className="error">{error}</p>
+  );
+
   return (
     <div className="notes">
       {
